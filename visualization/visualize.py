@@ -8,17 +8,17 @@ class Visualizer:
     def __init__(self, inputs):
         self.inputs = inputs
 
-    def printSingleRunValues(self, heapTimes, heapSteps):
+    def printSingleRunValues(self, times, steps):
         '''
         function that prints information about each run of the algorithm
-        heapTimes -> list of CPU times for heap sort
-        heapSteps -> list of operations during heap sort
+        times -> list of CPU times for heap sort
+        steps -> list of operations during heap sort
         '''
         for i in range(len(self.inputs)):
             print('Input Size: ', self.inputs[i])
-            print('Heap CPU Time: ', heapTimes[i], 'x 10^(-2) seconds')
-            print('Heap Steps: ', heapSteps[i])
-            print('C constant: ', float(heapSteps[i]) / (self.inputs[i] * math.log2(self.inputs[i])))
+            print('Heap CPU Time: ', times[i], 'x 10^(-2) seconds')
+            print('Heap Steps: ', steps[i])
+            print('C constant: ', float(steps[i]) / (self.inputs[i] * math.log2(self.inputs[i])))
             print()
 
     
@@ -28,12 +28,12 @@ class Visualizer:
 
         _, ax = plt.subplots(1)
 
-        ax.plot(x, y, 'r', label='Heap Curve')
+        ax.plot(x, y, 'r', label='Curve')
 
         plt.xlabel('Number of Operations')
         plt.ylabel('CPU Time')
 
-        ax.set_title('Heap Sort')
+        ax.set_title('Quick Sort')
 
         ax.legend()
 
