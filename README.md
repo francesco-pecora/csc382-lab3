@@ -4,10 +4,11 @@
 
 ### SORTED ARRAYS
 
-- Input Size:  100
-- Heap CPU Time:  0.05856 x 10^(-2) seconds
-- Heap Steps:  15741
-- C constant:  23.692565808733644
+- 1
+Input Size:  100
+Heap CPU Time:  0.05856 x 10^(-2) seconds
+Heap Steps:  15741
+C constant:  23.692565808733644
 
 - Input Size:  200
 - Heap CPU Time:  0.32662 x 10^(-2) seconds
