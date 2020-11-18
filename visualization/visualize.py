@@ -11,13 +11,13 @@ class Visualizer:
     def printSingleRunValues(self, times, steps):
         '''
         function that prints information about each run of the algorithm
-        times -> list of CPU times for heap sort
-        steps -> list of operations during heap sort
+        times -> list of CPU times for quick sort
+        steps -> list of operations during quick sort
         '''
         for i in range(len(self.inputs)):
             print('Input Size: ', self.inputs[i])
-            print('Heap CPU Time: ', times[i], 'x 10^(-2) seconds')
-            print('Heap Steps: ', steps[i])
+            print('quick CPU Time: ', times[i], 'x 10^(-2) seconds')
+            print('quick Steps: ', steps[i])
             print('C constant: ', float(steps[i]) / (self.inputs[i] * math.log2(self.inputs[i])))
             print()
 
